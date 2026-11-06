@@ -1,0 +1,36 @@
+{
+  "request": {
+    "displayName": "Synthetic Channel",
+    "description": "",
+    "groupId": "11111111-2222-4333-8444-555555555555",
+    "channelType": "Standard",
+    "chatModalityType": "Conversational"
+  },
+  "response": {
+    "value": {
+      "objectId": "19:synthetic-channel@thread.tacv2",
+      "displayName": "Synthetic Channel",
+      "groupId": "11111111-2222-4333-8444-555555555555",
+      "channelState": "Active",
+      "chatModalityType": "Conversational"
+    }
+  },
+  "conversation": {
+    "id": "19:synthetic-channel@thread.tacv2",
+    "threadProperties": {
+      "topic": "Synthetic Channel",
+      "spaceId": "19:synthetic-team@thread.tacv2",
+      "groupId": "11111111-2222-4333-8444-555555555555",
+      "privacy": "public",
+      "threadType": "topic",
+      "productThreadType": "TeamsStandardChannel"
+    }
+  },
+  "delete_observed_subset": {
+    "id": "19:synthetic-channel@thread.tacv2",
+    "channelType": "Standard",
+    "displayName": "Synthetic Channel",
+    "isGeneral": false
+  },
+  "delete_response": true
+}

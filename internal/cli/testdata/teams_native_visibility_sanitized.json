@@ -1,0 +1,24 @@
+{
+  "hide": [
+    {
+      "name": "unpinnedTime",
+      "value": 1700000000123
+    },
+    {
+      "name": "historyHiddenTime",
+      "value": "1700000000123"
+    }
+  ],
+  "unhide": [
+    {
+      "name": "unpinnedTime",
+      "value": null
+    },
+    {
+      "name": "historyHiddenTime",
+      "value": null
+    }
+  ],
+  "response_status": 200,
+  "response_body": ""
+}

@@ -1,0 +1,15 @@
+{
+  "source": {
+    "id": "synthetic-source",
+    "content": "synthetic source",
+    "properties": {}
+  },
+  "quote": {
+    "id": "synthetic-quote",
+    "content": "synthetic quote",
+    "messagetype": "RichText/Html",
+    "properties": {
+      "qtdMsgs": "[{\"messageId\":\"synthetic-source\",\"sender\":\"8:orgid:synthetic-user\",\"time\":1700000000000}]"
+    }
+  }
+}

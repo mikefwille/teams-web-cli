@@ -1,0 +1,54 @@
+{
+  "request": {
+    "displayNamePrefix": "",
+    "description": "",
+    "isTenantWide": false,
+    "sensitivityLabelId": null,
+    "displayName": "Synthetic Team",
+    "topicThreadTopic": "Initial",
+    "accessType": 1,
+    "displayNameSuffix": "",
+    "validationRequired": false
+  },
+  "response": {
+    "value": {
+      "objectId": "19:synthetic-team@thread.tacv2",
+      "skypeThreadId": "19:synthetic-team@thread.tacv2",
+      "displayName": "Synthetic Team",
+      "accessType": "Private"
+    }
+  },
+  "thread": {
+    "id": "19:synthetic-team@thread.tacv2",
+    "threadProperties": {
+      "isCreator": true,
+      "spaceThreadTopic": "Synthetic Team",
+      "threadType": "space"
+    },
+    "memberProperties": {
+      "role": "Admin"
+    }
+  },
+  "roster": {
+    "isDeleted": false,
+    "totalMemberCount": 4,
+    "members": [
+      {
+        "id": "28:synthetic-bot-0",
+        "role": "User"
+      },
+      {
+        "id": "28:synthetic-bot-1",
+        "role": "User"
+      },
+      {
+        "id": "28:synthetic-bot-2",
+        "role": "User"
+      },
+      {
+        "id": "8:orgid:synthetic-user",
+        "role": "Admin"
+      }
+    ]
+  }
+}

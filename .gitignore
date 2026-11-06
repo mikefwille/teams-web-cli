@@ -1,0 +1,13 @@
+# Root-anchored so cmd/<binary>/ source stays tracked.
+/teams-web-pp-cli
+/teams-web-pp-cli.exe
+/teams-web-pp-mcp
+/teams-web-pp-mcp.exe
+/bin/
+/build/
+/dist/
+/.env*
+/credentials.json
+/private/
+/sessions/
+/captures/

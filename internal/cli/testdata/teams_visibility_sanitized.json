@@ -1,0 +1,10 @@
+{
+  "hide": {
+    "historyHiddenTime": "1700000000123"
+  },
+  "unhide": {
+    "historyHiddenTime": null
+  },
+  "response_status": 200,
+  "response_body": ""
+}

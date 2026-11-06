@@ -1,0 +1,55 @@
+version: 2
+project_name: teams-web-pp-cli
+changelog:
+  disable: true
+builds:
+  - id: teams-web-pp-cli
+    main: ./cmd/teams-web-pp-cli
+    binary: teams-web-pp-cli
+    env:
+      - CGO_ENABLED=0
+    flags:
+      - -trimpath
+    ldflags:
+      - -s -w -X github.com/mikefwille/teams-web-cli/internal/cli.version={{ .Version }}
+    targets:
+      - darwin_amd64
+      - darwin_arm64
+      - linux_amd64
+      - linux_arm64
+      - windows_amd64
+      - windows_arm64
+  - id: teams-web-pp-mcp
+    main: ./cmd/teams-web-pp-mcp
+    binary: teams-web-pp-mcp
+    env:
+      - CGO_ENABLED=0
+    flags:
+      - -trimpath
+    ldflags:
+      - -s -w -X main.version={{ .Version }}
+    targets:
+      - darwin_amd64
+      - darwin_arm64
+      - linux_amd64
+      - linux_arm64
+      - windows_amd64
+      - windows_arm64
+archives:
+  - formats: [tar.gz]
+    name_template: "{{ .ProjectName }}_{{ .Version }}_{{ .Os }}_{{ .Arch }}"
+    format_overrides:
+      - goos: windows
+        formats: [zip]
+checksum:
+  name_template: checksums.txt
+brews:
+  - name: teams-web-pp-cli
+    repository:
+      owner: mikefwille
+      name: homebrew-tap
+    homepage: "https://github.com/mikefwille/teams-web-cli"
+    description: "Work with a selected Teams web-session account."
+    install: |
+      bin.install "teams-web-pp-cli"
+      bin.install "teams-web-pp-mcp"
